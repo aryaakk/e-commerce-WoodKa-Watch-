@@ -1,0 +1,278 @@
+:root {
+    --fontAll1: 'Amaranth', sans-serif;
+    --fontAll2: 'Bubblegum Sans', cursive;
+    --fontAll3: 'Concert One', cursive;
+    --fontAll4: 'Itim', cursive;
+    --fontAll5: 'Josefin Sans', sans-serif;
+    --fontAll6: 'Lilita One', cursive;
+    --fontAll7: 'Patrick Hand', cursive;
+    --fontAll8: 'Poppins', sans-serif;
+    --fontAll9: 'Roboto Slab', serif;
+    --fontAll10: 'Concert One', cursive;
+
+}
+
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.containerr {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F0E5E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.containerr .svg-bubbles {
+    width: 70rem;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+
+.containerr .wrapper {
+    background-color: #f9f5f382;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 0px 43px -15px rgba(31, 31, 31, 0.482);
+    -webkit-box-shadow: 2px 0px 43px -15px rgba(31, 31, 31, 0.482);
+    -moz-box-shadow: 2px 0px 43px -15px rgba(31, 31, 31, 0.75);
+    width: 35rem;
+    /* height: 25rem;   */
+    z-index: 1;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.containerr .wrapper .img-header {
+    margin: -50px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    /* box-shadow: 0px 5px 60px 0px rgba(36, 36, 36, 0.28);
+    -webkit-box-shadow: 0px 5px 60px 0px rgba(36, 36, 36, 0.28);
+    -moz-box-shadow: 0px 5px 60px 0px rgba(36, 36, 36, 0.28); */
+    background-color: #5E2404;
+    padding: 20px;
+    border-radius: 500px;
+}
+
+.containerr .wrapper .img-header img {
+    width: 5rem;
+    padding: 10px 0 0 0 ;
+}
+
+.containerr .wrapper .header-title {
+    font-size: 40px;
+    font-family: var(--fontAll2);
+    color: #36241C;
+    margin: 0 0 20px 0;
+}
+
+.containerr .wrapper .form-login {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25rem;
+}
+
+.containerr .wrapper .form-login .form-grp {
+    padding: 0px 0 10px 0;
+    width: 25rem;
+}
+
+.containerr .wrapper .form-login .form-grp label {
+    display: block;
+    font-size: 20px;
+    font-family: var(--fontAll1);
+    color: #532A09;
+}
+
+.containerr .wrapper .form-login .form-grp .inp {
+    margin: 5px 0 0 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 17px;
+    font-family: var(--fontAll2);
+    color: #36241C;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #FFD1AD;
+    border: 2px solid #FFD1AD;
+    outline: none;
+}
+
+.containerr .wrapper .form-login .form-grp .inp:focus {
+    border: 2px solid #A85311;
+}
+
+.containerr .wrapper .form-login .form-grp.remember{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 5px;
+    padding: 0 0 10px 0;
+}
+
+.containerr .wrapper .form-login .form-grp.remember span{
+    font-size: 18px;
+    color: #2525259a;
+    font-family: var(--fontAll1);
+}
+
+.containerr .wrapper .form-login .form-butt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15rem;
+    margin: 10px 0 20px 0;
+}
+
+.containerr .wrapper .form-login .form-butt .log-in{
+    border: none;
+    outline: none;
+    background-color: #713200;
+    padding: 10px 0;
+    margin: 0 0 5px 0;
+    width: 20rem;
+    color:  #EDE0D4;
+    font-family: var(--fontAll5);
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.containerr .wrapper .form-login .form-butt .log-in:hover{
+    background-color: #C06722;
+}
+
+.containerr .wrapper .form-login .form-butt .log-in:focus{
+    background-color: #C06722;
+}
+
+.containerr .wrapper .form-login .form-butt .sign-with{
+    margin: 5px 0 10px 0 ;
+}
+
+.containerr .wrapper .form-login .form-butt .sign-with .google{
+    text-decoration: none;
+    color: #36241C;
+    font-family: var(--fontAll2);
+    border: 2px solid #36241C;
+    padding: 7px;
+    width: 20rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.containerr .wrapper .form-login .form-butt .sign-with .google i{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.containerr .wrapper .form-login .form-butt .sign-with .google:hover{
+    border: 2px solid #C06722;
+    background-color: #C06722;
+    color:  #EDE0D4;
+    
+}
+
+.containerr .wrapper .form-login .form-butt a{
+    text-decoration: none;
+}
+
+.containerr .wrapper .form-login .form-butt a.forgot-password{
+    color: #AD8042;
+    font-family: var(--fontAll1);
+    text-align: center;
+    padding: 0 0 15px 0;
+}
+
+.containerr .wrapper .form-login .form-butt a.forgot-password:hover{
+    text-decoration: underline;
+}
+
+.containerr .wrapper .form-login .form-butt a.sign-up{
+    color: #7B4618;
+    font-family: var(--fontAll1);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.containerr .wrapper .form-login .form-butt a.sign-up:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/* checkbox style */
+.check {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    appearance: none;
+    background-color: #bbb;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.check::before {
+    content: '';
+    position: absolute;
+    border: solid #fff;
+    display: block;
+    width: .3em;
+    height: .6em;
+    border-width: 0 .2em .2em 0;
+    z-index: 1;
+    opacity: 0;
+    right: calc(50% - .3em);
+    top: calc(50% - .6em);
+    transform: rotate(0deg);
+    transition: all .3s;
+    transform-origin: center center;
+}
+
+.check:checked {
+    animation: a .3s ease-in forwards;
+    background-color: #5E2404;
+}
+
+.check:checked::before {
+    opacity: 1;
+    transform: rotate(405deg);
+}
+
+@keyframes a {
+    0% {
+        opacity: 1;
+        transform: scale(1) rotateY(0deg);
+    }
+
+    50% {
+        opacity: 0;
+        transform: scale(.8) rotateY(180deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) rotateY(360deg);
+    }
+}

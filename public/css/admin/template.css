@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Secular+One&family=Solway&family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caudex&family=Fredoka+One&family=Macondo&family=Potta+One&display=swap');
+
+
+:root {
+    --font1: 'Josefin Sans', sans-serif;
+    --font2: 'Secular One', sans-serif;
+    --font3: 'Solway', serif;
+    --font4: 'Titillium Web', sans-serif;
+    --font5: 'Caudex', serif;
+    --font6: 'Fredoka One', cursive;
+    --font7: 'Macondo', cursive;
+    --font8: 'Potta One', cursive;
+}
+
+:root {
+    --fontAll1: 'Amaranth', sans-serif;
+    --fontAll2: 'Bubblegum Sans', cursive;
+    --fontAll3: 'Concert One', cursive;
+    --fontAll4: 'Itim', cursive;
+    --fontAll5: 'Josefin Sans', sans-serif;
+    --fontAll6: 'Lilita One', cursive;
+    --fontAll7: 'Patrick Hand', cursive;
+    --fontAll8: 'Poppins', sans-serif;
+    --fontAll9: 'Roboto Slab', serif;
+    --fontAll10: 'Concert One', cursive;
+
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color: #F9C74F;
+}
+
+#content {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    /* align-items: center; */
+}
+
+section .wrapper-side {
+    display: flex;
+    align-items: center;
+}
+
+section .sidebar {
+    width: 17%;
+    height: 95vh;
+    border-radius: 15px;
+    margin: 0 1.5%;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #370617;
+}
+
+.sidebar .header-side {
+    margin: 20px 20px 10px 20px;
+    text-align: center;
+    font-family: var(--font2);
+    font-size: 30px;
+    color: #FFDCC2;
+}
+
+.sidebar .header-side .img-header {
+    padding: 0 30px 10px 30px;
+}
+
+.sidebar .header-side .img-header img {
+    width: 5rem;
+    cursor: pointer;
+}
+
+.sidebar .row-side {
+    border: 1px solid #6A040F;
+    width: 100%;
+    margin: 0;
+}
+
+.sidebar .content-side {
+    /* margin: 30px 10px 0 25px; */
+    /* padding: 20px 0 0 0; */
+    /* margin: 10px 10px 20px 10px; */
+    padding: 0 0 0 30px;
+    width: 100%;
+    height: 70rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 50%;
+}
+
+.sidebar .content-side::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar .content-side::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #370617;
+}
+
+.sidebar .content-side::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #6A040F;
+}
+
+.content-side ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content-side ul li {
+    width: 190px;
+    padding: 10px 10px;
+    margin: 10px 0;
+    transition: all 0.2s;
+    border-radius: 5px 5px 5px 20px;
+}
+
+.content-side ul li a {
+    text-decoration: none;
+    position: relative;
+    color: #EDEDF4;
+    font-size: 18px;
+    padding: 10px 100% 10px 0;
+    font-family: var(--font1);
+}
+
+.content-side ul li.active {
+    background-color: #EDEDF4;
+}
+
+.content-side ul li.active a {
+    font-weight: bold;
+    color: #370617;
+}
+
+.content-side ul li:hover {
+    /* background-color: #ecddf5; */
+    background-color: #ff970561;
+    color: #EDEDF4;
+}
+
+.content-side ul li:hover a {
+    color: #EDEDF4;
+}
+
+.sidebar .footer-side {
+    position: relative;
+    margin-bottom: 0;
+    display: flex;
+    width: 100%;
+    padding: 0 0 20px;
+    justify-content: center;
+}
+
+.footer-side .logout {
+    text-decoration: none;
+    color: #EDEDF4;
+    font-family: var(--font1);
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 5px 50px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #FF9505;
+}
+
+.footer-side .logout:hover {
+    background-color: #F9C74F;
+}
+
+.main {
+    margin: 0 0 0 18.5%;
+    padding: 20px;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.main .header {
+    padding: 5px 20px;
+    font-family: var(--font4);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header .brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header .brand .head span {
+    font-size: 15px;
+    color: #370617;
+}
+
+.header .brand .head span b {
+    font-weight: 600;
+}
+
+.brand .ket {
+    font-size: 30px;
+    font-weight: bold;
+    color: #370617;
+    font-family: var(--font1);
+}
+
+.header .users {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header .users .drop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header .users .drop .img {
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header .users .drop .img img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+}
+
+
+.header .users .drop .ket {
+    padding: 0 0 0 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header .users .drop .ket .name {
+    font-family: var(--fontAll8);
+    font-size: 18px;
+    color: #370617;
+}
+
+
+.header .users .drop .ket .dropdown i {
+    font-size: 25px;
+    /* margin: 0;
+    padding: 30px 0 0 0; */
+    color: #370617;
+}
+
+
+.header .users .drop .ket .dropdown i::before {
+    padding: 0;
+    margin: 0;
+}
+
+
+.header .users .dropdwn {
+    width: 12rem;
+    margin: 10px 0 0 0;
+    text-align: center;
+    animation-name: dropdown;
+    animation-duration: 0.2s;
+}
+
+
+.header .users .dropdwn form {
+    display: flex;
+    justify-content: center;
+}
+
+
+.header .users .dropdwn form button {
+    border: none;
+    outline: none;
+    width: 10rem;
+    padding: 7px 0;
+    border-radius: 10px;
+    background-color: #ED862B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--fontAll1);
+    color: #F9F5F3;
+}
+
+@keyframes dropdown {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(50px);
+    }
+}
